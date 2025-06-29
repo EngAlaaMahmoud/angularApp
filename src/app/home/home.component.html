@@ -1,1 +1,18 @@
 <p>home works!</p>
+<h1 [style.color]="product > 500? 'red': 'green'">product price : {{product}}</h1>
+<h2 [style]="product > 500? mainStyle: secondStyle ">product price : {{product}}</h2>
+<app-child [usernameHome]="userName"></app-child>
+<div class="p-5 w-75  mx-auto text-center">
+   <input [(ngModel)]="userName" class="form-control"/>
+    <h3>userName: {{userName}}</h3>
+</div>
+<table class="table">
+    <thead></thead>
+    <tbody>
+        <tr *ngFor="let user of userHomeLst">
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.gender}}</td>
+        </tr>
+    </tbody>
+</table>
