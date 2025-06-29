@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ChildComponent } from "../child/child.component";
 import { FormsModule } from '@angular/forms';
 import { TestUsersServiceService, user } from '../test-users-service.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ChildComponent,FormsModule],
+  imports: [ChildComponent,FormsModule,CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
